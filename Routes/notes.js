@@ -53,7 +53,7 @@ router.put('/updatenote/:id', fetchuser, async (req, res) => {
         if (!note) {
             return res.status(404).send("Note Not Found!");
         }
-        //check whether the note belongs to the logged user or not
+        //check whether the note belongs to the logged user or not 
         if (note.user.toString() !== req.user.id) {
             return res.status(401).send("Not Allowed");
         }
