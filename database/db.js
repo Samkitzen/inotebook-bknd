@@ -1,5 +1,5 @@
 const mongoose  = require("mongoose")
-const mongoUri = "mongodb+srv://samkit:samkit123@cluster0.7zv2p.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+const mongoUri = ;//Mongo Url Should be places=d here
 
 const connectToMongo = ()=>{
     mongoose.connect(mongoUri,(err)=>{
